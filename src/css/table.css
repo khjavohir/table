@@ -1,0 +1,22 @@
+table{
+    box-shadow: 1px 1px 8px rgb(212, 212, 212);
+    width: 700px;
+    border-collapse: collapse;
+    
+}
+
+th{
+    background-color: rgb(46, 31, 54);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 10px;
+}
+th p{
+    float: left;
+}
+td{
+    padding: 10px;
+}
+.ex1{
+    background-color: rgb(232, 232, 232);
+}
