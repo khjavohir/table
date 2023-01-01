@@ -1,37 +1,23 @@
-import '../css/table.css'
+import "../css/table.css";
 
-const Table = ({ table, tableHeader }) => {
-
-
-
-
+const Table = ({ cards }) => {
   return (
-    <div>
-      <table>
-        <tr>
-          {tableHeader && tableHeader.length > 0
-            ? tableHeader.map((item, index) => (
-                <th key={index}>
-                  <p>{item.name}</p>
-                </th>
-              ))
-            : ""}
-        </tr>
-
-        {table && table.length
-          ? table.map((item, index) => (
-              <tr key={index}>
-                {tableHeader && tableHeader.length > 0 ? tableHeader.map((itemHeader, index) => (
-                  <td>{item[itemHeader.key]}</td>
-                )) : ''}
-                
-                
-              </tr>
-            ))
-          : ""}
-      </table>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      {cards && cards.length
+        ? cards.map((item, index) => (
+            <div className="ex1">
+              <img src={item.img} alt="" />
+              <p className="first-p" key={index}>{item.title} </p>
+              <div className="big-ex2">
+                <div className="ex2"></div>
+               <p className="second-p"><i>{item.desc}</i></p>
+               <a className="second-a" href="#">{item.btn}</a>
+              </div>
+            </div>
+          ))
+        : ""}
     </div>
   );
-}
+};
 
-export default Table
+export default Table;

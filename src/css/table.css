@@ -1,22 +1,73 @@
-table{
-    box-shadow: 1px 1px 8px rgb(212, 212, 212);
-    width: 700px;
-    border-collapse: collapse;
-    
+* {
+  box-sizing: border-box;
+}
+.ex1 {
+  margin-left: 50px;
+  height: 355px;
+  border: 1px solid black;
+}
+.ex1:hover .ex2 {
+  opacity: 0.5;
 }
 
-th{
-    background-color: rgb(46, 31, 54);
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 0px 10px;
+.ex1:hover .second-p {
+  opacity: 1;
 }
-th p{
-    float: left;
+
+.ex1:hover .second-a {
+  opacity: 1;
 }
-td{
-    padding: 10px;
+
+
+.big-ex2 {
+  width: 250px;
+  height: 360px;
+  position: relative;
+  top: -420px;
 }
-.ex1{
-    background-color: rgb(232, 232, 232);
+
+.ex2 {
+  bottom: 420px;
+  opacity: 0;
+  background-image: linear-gradient(white, black);
+  width: 250px;
+  height: 360px;
+
+  transition: all 0.4s ease-out;
+}
+
+.first-p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  position: relative;
+  top: -100px;
+  left: 50px;
+  color: white;
+}
+img {
+  width: 250px;
+}
+
+.second-p {
+  text-align: center;
+  opacity: 0;
+  color: white;
+  position: relative;
+  transition: 0.4s ease;
+  top: -250px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+}
+.second-a {
+  text-align: center;
+  opacity: 0;  
+  color: white;
+  position: relative;
+  transition: 0.4s ease;
+  top: -250px;
+  text-decoration: none;
+  padding: 13px;
+  margin-left: 70px;
+  background-color: black;
 }
